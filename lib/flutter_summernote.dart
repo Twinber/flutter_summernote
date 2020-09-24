@@ -265,6 +265,8 @@ class FlutterSummernoteState extends State<FlutterSummernote> {
       toolbar = customToolbar;
     }
 
+    String styleButtons = Platform.isIOS ? '<style>.btn{font-size: 40px!important;}</style>' : '';
+
     return '''
     <!DOCTYPE html>
     <html lang="en">
@@ -283,11 +285,8 @@ class FlutterSummernoteState extends State<FlutterSummernote> {
     </head>
     <body>
     <div id="summernote" contenteditable="true"></div>
-    <style>
-    .btn{
-    font-size: 40px!important;
-    }
-    </style>
+    ''' + styleButtons  +
+        '''
     <script type="text/javascript">
       \$("#summernote").summernote({
         placeholder: 'Your text here...',
