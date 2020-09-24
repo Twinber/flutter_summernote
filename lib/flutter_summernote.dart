@@ -283,6 +283,11 @@ class FlutterSummernoteState extends State<FlutterSummernote> {
     </head>
     <body>
     <div id="summernote" contenteditable="true"></div>
+    <style>
+    .btn{
+    font-size: 40px!important;
+    }
+    </style>
     <script type="text/javascript">
       \$("#summernote").summernote({
         placeholder: 'Your text here...',
