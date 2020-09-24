@@ -265,7 +265,7 @@ class FlutterSummernoteState extends State<FlutterSummernote> {
       toolbar = customToolbar;
     }
 
-    String styleButtons = Platform.isIOS ? '<style>body{ font-size:28px!important}.btn{font-size: 48px!important;}</style>' : '';
+    String styleButtons = Platform.isIOS ? '<style>body{ font-size:32px!important}.btn{font-size: 48px!important;}</style>' : '';
 
     return '''
     <!DOCTYPE html>
